@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnEjercicio1, btnEjercicio2, btnEjercicio3;
 
     @Override
+    //actividad main logica para hacer los calculos cod 342 hector martinez 20:15
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
