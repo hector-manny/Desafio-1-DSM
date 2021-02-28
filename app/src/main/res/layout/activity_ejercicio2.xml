@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONTEO DE VOTOS"
+        android:text="Sistema de Conteo De Votos"
         android:textColor="#212121"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:text="1 -> Candidato 1 \n2 -> Candidato 2 \n3 -> Candidato 3 \n4 -> Candidato 4 \n\nCualquier otro numero será considerado nulo"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="#212121"
         android:textSize="16dp"
         android:textStyle="bold"
@@ -36,26 +36,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.028" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:text="Ingrese la secuencia de votos separados por comas:"
+        android:textAlignment="viewStart"
         android:textColor="#212121"
         android:textSize="16dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.036" />
-
+        app:layout_constraintVertical_bias="0.067" />
 
     <EditText
         android:id="@+id/editTextVotes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
         android:layout_marginHorizontal="20dp"
         android:ems="10"
         android:hint="Ingrese secuencia de votos"
@@ -79,7 +80,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextVotes"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/textView5"
@@ -92,7 +93,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.048" />
@@ -152,7 +153,7 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.273" />
@@ -179,7 +180,7 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.36" />
@@ -197,6 +198,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.361" />
 
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -206,11 +208,10 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.444" />
-
+        app:layout_constraintVertical_bias="0.443" />
 
     <TextView
         android:id="@+id/txtForthPlace"
@@ -227,10 +228,11 @@
 
     <Button
         android:id="@+id/btnSend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="43dp"
         android:layout_marginHorizontal="20dp"
         android:text="REALIZAR CONTEO"
+        app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -239,10 +241,11 @@
 
     <Button
         android:id="@+id/btnFinish"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="44dp"
         android:layout_marginHorizontal="20dp"
         android:text="Regresar"
+        app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
